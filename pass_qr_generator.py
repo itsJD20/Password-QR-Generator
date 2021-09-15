@@ -22,7 +22,7 @@ def passgenV1(l=9):
 
     return password
 
-def passgenV2(l = 8):
+def passgenV2(l = 10):
 
     character = [list(string.ascii_lowercase),
                 list(string.ascii_uppercase),
