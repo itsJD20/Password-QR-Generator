@@ -41,8 +41,8 @@ def passgenV2(l = 8):
 
     return password
 
-img = qrcode.make(passgenV2())
-img.save("PASSWORD.jpg")
+image = qrcode.make(passgenV2())
+image.save("PASSWORD.jpg")
 
 
 
