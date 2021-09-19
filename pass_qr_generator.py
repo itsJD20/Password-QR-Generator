@@ -1,7 +1,7 @@
 import random
 import string
 import qrcode
-
+import time
     
 def rand(u):
 
@@ -41,9 +41,13 @@ def passgenV2(l = 10):
 
     return password
 
-image = qrcode.make(passgenV2())
-image.save("PASSWORD.jpg")
 
+n = 0
+while n< 100:
+    image = qrcode.make(passgenV2())
+    image.save("PASSWORD.jpg")
+    time.sleep(3)
+    n += 1
 
 
 
